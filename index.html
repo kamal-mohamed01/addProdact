@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>decoment</title>
+
+
+</head> 
+<body>
+
+<div class="container py-4">
+    <h1 class="text-center">Add prodact</h1>
+    <label for="prodactName">prodactName :</label>
+    <input type="text" class="form-control mb-3" id="prodactName">
+
+
+    <label for="prodactPrice">prodactPrice :</label>
+    <input type="number" class="form-control mb-3" id="prodactPrice">
+
+
+    <label for="prodactCategory">prodactCategory :</label>
+    <input type="text" class="form-control mb-3" id="prodactCategory">
+
+
+    <label for="prodactDesc">prodactDesc :</label>
+    <textarea type="text" class="form-control mb-3" id="prodactDesc"></textarea>
+    <button id="addBtn" onclick="addProdact();" class="btn btn-lg w-100 d-block btn-outline-info" >addProdact</button>
+    <button id="ubdateBtn" class="btn btn-lg w-100 mt-2 btn-outline-warning d-none" onclick="ubdateProdact()" >updateprodact</button>
+
+
+</div>
+<div class="w-75 my-3 mx-auto">
+    <input type="text" oninput="searshProdacts(this.value)"  placeholder="search by name" class="form-control w-75 my-3 mx-auto">
+    <table class="table text-center">
+        <thead>
+            <th>Name</th>
+            <th>price</th>
+            <th>catecory</th>
+            <th>deck</th>
+            <th>ubdate</th>
+            <th>delete</th>
+        </thead>
+        <tbody id="tableBody">
+            <!-- <tr>
+                <td>toshiba</td>
+                <td>5550</td>
+                <td>tv</td>
+                <td>good</td>
+                <td><button class="btn btn-outline-primary btn-sm ">ubdate</button></td>
+                <td><button class="btn btn-outline-danger btn-sm ">delete</button></td>
+                <td></td>
+            </tr> -->
+        </tbody>
+    </table>
+</div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<tr>
+    <td>toshiba</td>
+    <td>5550</td>
+    <td>tv</td>
+    <td>good</td>
+    <td><button class="btn btn-outline-primary btn-sm ">ubdate</button></td>
+    <td><button class="btn btn-outline-danger btn-sm ">delete</button></td>
+    <td></td>
+</tr>
+ -->
+
+
